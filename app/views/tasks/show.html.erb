@@ -1,0 +1,8 @@
+<h1>These are ur ta$k details</h1>
+<p>
+  <%# display the task title and its details %>
+  <%= @task.title %> ---
+  <%= @task.details %>
+</p>
+<%= link_to "Back to ta$k$", index_path %>
+<%= link_to "Edit ta$k", edit_path(@task.id) %>

@@ -1,1 +1,12 @@
-<h1>YOOOOOOO!!!!!!!</h1>
+<h1>YOOOOOOO!!!!!!! DO UR TA$K$</h1>
+<ul>
+  <% @tasks.each do |task| %>
+    <li>
+      <%# <%= task.title %>
+      <%= link_to task.title, task_path(task.id) %>
+    </li>
+  <% end %>
+</ul>
+<p>
+  <%= link_to "Add another ta$k", tasks_new_path %>
+</p>
